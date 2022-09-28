@@ -29,6 +29,9 @@ test recording ini high quality
 Route::view('/', 'home.index')->name('home.index'); //method view utk menyederhanakan route tanpa parameter
 Route::view('/contact', 'home.contact')->name('home.contact');
 
+//render view info.blade.php dari dalam folder views/home
+Route::view('/info','home.info')->name('home.info');
+
 $posts = [
     1 => [
         'title' => 'Intro to Laravel',
